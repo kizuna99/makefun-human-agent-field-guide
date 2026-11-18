@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="360" viewBox="0 0 1180 360" role="img" aria-label="Anatomy of a make.fun guide submission">
+  <style>
+    .repo { fill: #ffffff; stroke: #0f172a; stroke-width: 2.5; }
+    .file { fill: #eff6ff; stroke: #2563eb; stroke-width: 1.8; }
+    .bundle { fill: #fefce8; stroke: #ca8a04; stroke-width: 2; }
+    .check { fill: #f0fdf4; stroke: #16a34a; stroke-width: 1.8; }
+    .h { fill: #0f172a; font-family: Arial, Helvetica, sans-serif; font-size: 19px; font-weight: bold; }
+    .t { fill: #0f172a; font-family: Arial, Helvetica, sans-serif; font-size: 15.5px; font-weight: bold; }
+    .s { fill: #334155; font-family: Arial, Helvetica, sans-serif; font-size: 13px; }
+    .mono { font-family: 'Courier New', monospace; font-size: 13.5px; fill: #0f172a; }
+  </style>
+  <rect width="1180" height="360" fill="#ffffff"/>
+  <text x="24" y="36" class="h">Anatomy of one submission: a public GitHub repository + its transcript bundle</text>
+  <rect class="repo" x="20" y="60" width="700" height="270" rx="12"/>
+  <text class="t" x="40" y="92">github.com/&lt;owner&gt;/&lt;repo&gt; — public, created after the bounty opens, MIT licensed</text>
+  <rect class="file" x="40" y="110" width="660" height="62" rx="8"/>
+  <text class="mono" x="56" y="136">README.md — the guide itself, at the root, exact name</text>
+  <text class="s" x="56" y="158">3 live make.fun badges on top · your referral code named · at most 2 MB · no .github/README.md shadowing it</text>
+  <rect class="file" x="40" y="186" width="660" height="62" rx="8"/>
+  <text class="mono" x="56" y="212">screenshot.png — your real repository page on GitHub, README showing</text>
+  <text class="s" x="56" y="234">PNG / JPEG / WebP · at most 8 MB and 16,000,000 pixels · top square shows the repo name + guide start</text>
+  <rect class="file" x="40" y="262" width="660" height="52" rx="8"/>
+  <text class="mono" x="56" y="286">LICENSE — an OSI-approved license (MIT here)</text>
+  <text class="s" x="56" y="304">About block: website = the bounty page on make.fun · topics include makefun</text>
+  <rect class="bundle" x="750" y="60" width="410" height="128" rx="12"/>
+  <text class="t" x="770" y="92">transcripts.tar.gz — uploaded with the entry</text>
+  <text class="s" x="770" y="118">The recorded sessions that wrote the guide,</text>
+  <text class="s" x="770" y="138">plus the run record: prompt, harness, model,</text>
+  <text class="s" x="770" y="158">effort, system prompt, instruction files, MCP servers.</text>
+  <rect class="check" x="750" y="202" width="410" height="128" rx="12"/>
+  <text class="t" x="770" y="234">The gate it must pass</text>
+  <text class="s" x="770" y="260">≥ 30% of counted lines authored by the agent ·</text>
+  <text class="s" x="770" y="280">≥ 1 file revised in ≥ 2 messages · ≥ 5 text turns ·</text>
+  <text class="s" x="770" y="300">all timestamps inside the competition window.</text>
+</svg>

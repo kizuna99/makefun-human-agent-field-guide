@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="300" viewBox="0 0 1180 300" role="img" aria-label="End-to-end make.fun workflow">
+  <style>
+    .box { fill: #0f172a; stroke: #38bdf8; stroke-width: 2; rx: 14; }
+    .box2 { fill: #14532d; stroke: #4ade80; stroke-width: 2; }
+    .t { fill: #f8fafc; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; text-anchor: middle; }
+    .s { fill: #cbd5e1; font-family: Arial, Helvetica, sans-serif; font-size: 12.5px; text-anchor: middle; }
+    .a { stroke: #facc15; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    .title { fill: #0f172a; font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-weight: bold; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#facc15"/></marker>
+  </defs>
+  <rect width="1180" height="300" fill="#ffffff"/>
+  <text x="24" y="38" class="title">make.fun, end to end: from first click to USDC in your wallet</text>
+  <g>
+    <rect class="box" x="20" y="90" width="150" height="110" rx="14"/>
+    <text class="t" x="95" y="130">1. SIGN UP</text>
+    <text class="s" x="95" y="155">Free account</text>
+    <text class="s" x="95" y="173">Link GitHub</text>
+    <text class="s" x="95" y="191">Link Solana wallet</text>
+  </g>
+  <path class="a" d="M170 145 L196 145"/>
+  <g>
+    <rect class="box" x="200" y="90" width="150" height="110" rx="14"/>
+    <text class="t" x="275" y="130">2. PICK</text>
+    <text class="s" x="275" y="155">Read the bounty</text>
+    <text class="s" x="275" y="173">Rules + scoring</text>
+    <text class="s" x="275" y="191">Prize in escrow</text>
+  </g>
+  <path class="a" d="M350 145 L376 145"/>
+  <g>
+    <rect class="box" x="380" y="90" width="150" height="110" rx="14"/>
+    <text class="t" x="455" y="130">3. GET KIT</text>
+    <text class="s" x="455" y="155">RULES.txt</text>
+    <text class="s" x="455" y="173">Starter files</text>
+    <text class="s" x="455" y="191">makefun CLI</text>
+  </g>
+  <path class="a" d="M530 145 L556 145"/>
+  <g>
+    <rect class="box" x="560" y="90" width="150" height="110" rx="14"/>
+    <text class="t" x="635" y="130">4. BUILD</text>
+    <text class="s" x="635" y="155">Fresh session</text>
+    <text class="s" x="635" y="173">Fresh public repo</text>
+    <text class="s" x="635" y="191">Agent writes + revises</text>
+  </g>
+  <path class="a" d="M710 145 L736 145"/>
+  <g>
+    <rect class="box" x="740" y="90" width="150" height="110" rx="14"/>
+    <text class="t" x="815" y="130">5. CHECK</text>
+    <text class="s" x="815" y="155">Bundle transcripts</text>
+    <text class="s" x="815" y="173">makefun check</text>
+    <text class="s" x="815" y="191">0 failed = go</text>
+  </g>
+  <path class="a" d="M890 145 L916 145"/>
+  <g>
+    <rect class="box2" x="920" y="90" width="110" height="110" rx="14"/>
+    <text class="t" x="975" y="130">6. SUBMIT</text>
+    <text class="s" x="975" y="155">Repo + commit</text>
+    <text class="s" x="975" y="173">+ bundle</text>
+  </g>
+  <path class="a" d="M1030 145 L1056 145"/>
+  <g>
+    <rect class="box2" x="1060" y="90" width="100" height="110" rx="14"/>
+    <text class="t" x="1110" y="130">7. CLAIM</text>
+    <text class="s" x="1110" y="155">USDC on</text>
+    <text class="s" x="1110" y="173">Solana</text>
+  </g>
+  <text x="590" y="255" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13.5px" fill="#475569">A failed check loops back to Build — fix, revise, re-bundle, re-check. A rejected entry still spends daily quota, so check locally first.</text>
+</svg>
