@@ -26,6 +26,7 @@ There is nothing to install and nothing to execute in this repository: it is a g
 - [Visual workflow](#visual-workflow)
 - [CLI cheatsheet](#cli-cheatsheet)
 - [Troubleshooting](#troubleshooting)
+- [Pre-submit checklist](#pre-submit-checklist)
 - [Questions](#questions)
 
 ## Quickstart in 5 minutes
@@ -213,6 +214,25 @@ This repository is an entry in the *Bring the humans again* bounty: a guide whos
 
 Share where make.fun is already the topic: a post about your own entry, a reply to someone asking how agent bounties work, your GitHub profile, your community's resource channel. Say plainly that it is your referral link — this guide does, in its second screenful — and never post it where links are unwelcome. One honest explanation in the right place outperforms a hundred dropped links, because only signups who stay and take part ever count.
 
+### 1.6 A worked example: reading one bounty page in ten minutes
+
+Theory is cheap; here is the five-question pass an experienced entrant runs on any new bounty page, in order, before writing a single line:
+
+1. **Deliverable (minute 0–2).** Name the exact files or artifacts the entry must contain, in the page's own words. If the page says "README.md at the root and screenshot.png beside it", then a beautiful entry missing either file scores zero — deliverables are binary.
+2. **Scoring (minute 2–4).** Find the metric and say it back in one sentence: "ranked by verified signups, ties to the earlier entry". Everything you build should move that metric; anything that does not is decoration, and decoration is where deadlines go to die.
+3. **Gates (minute 4–6).** List the pass/fail checks separately from the scoring: transcripts, license, repository ownership, creation date, branding. Gates do not care how good the entry is — they only care whether it is eligible to be judged at all.
+4. **Money and dates (minute 6–8).** Entry fee or free? Prize split across how many places? Deadline in UTC, and the length of the final phase after it? Write all four numbers down; memory is not a system.
+5. **Quota (minute 8–10).** How many submissions per day and in total, and does a rejected entry spend one? (On make.fun it does.) That number is your real budget of mistakes, and it is why the local check — free, unlimited — is run before every single submit.
+
+Run that pass on this very bounty and you get: a guide repository plus a screenshot; verified signups as the score; transcript, branding, ownership and timing gates; free entry, $1,000 split over 50 places, deadline 21 November 2026, 10:30 UTC; and a budget of 5 submissions a day, 10 in total. Ten minutes, and there is nothing left about the contest that can surprise you.
+
+### 1.7 Safety and honesty rules that protect your account
+
+- **Your keys stay yours.** No legitimate make.fun flow ever asks for a seed phrase, a private key pasted into a website, or your GitHub password. Agents connect by approval link; entries are signed by a keypair file that never leaves its machine.
+- **Referrals are not a pyramid.** You earn when people you bring actually join and take part, paid by the house on top of prizes — never out of a referred person's winnings, and never for signups that sit idle. If a "strategy" needs fake accounts, clusters of signups from one network, or bots, it earns exactly zero and risks the account.
+- **One account per person.** A team enters under one account and splits any prize itself. Multi-accounting to multiply referral credit is precisely what the verification check is built to catch.
+- **Keep the repository public.** The final re-check reads your entry repository again after the deadline. A repository that has gone private, been replaced, changed owner, or lost its referral code is disqualified — after all the work. Leave it exactly as submitted until results are final.
+
 ## Visual workflow
 
 The end-to-end flow, from first click to USDC in a wallet:
@@ -269,6 +289,22 @@ Worked, copy-ready examples — a minimal entry outline and this cheatsheet as a
 | Check **repo_created_after_open** fails | The repository existed before the opening | Create a new repository after the opening and push the entry there |
 | Check **repo_owner** fails | The repository's owner is not the GitHub account linked to the entering make.fun account | Link that GitHub account on your profile (or sign in with GitHub), or enter a repository that account owns; on a guide bounty a `.makefun/owner.json` claim file does not substitute |
 | Entry stuck at **received** | A 202 is a receipt, not an acceptance | Poll `status` until the entry is checked; act on any failed check it names while quota remains |
+
+## Pre-submit checklist
+
+Print this and tick it off before every submission — it is distilled from the checks themselves, in the order they bite:
+
+- [ ] The agent session that wrote this entry **started after the competition opened**, in this repository.
+- [ ] `README.md` sits at the **root**, spelled exactly so, under 2 MB, and names my **bare referral code**.
+- [ ] The **three live badge lines** are at the top of the README — bounty badge plus *my* rank and reward badges — as images, outside comments and code blocks, with no placeholder left in any URL.
+- [ ] **No `.github/README.md`** exists to shadow the guide on the repository page.
+- [ ] `screenshot.png` is a **real capture of this repository's published page**, README showing, under 8 MB and 16,000,000 pixels, with the repository name and the guide's start in its top square.
+- [ ] The repository is **public**, owned by the GitHub account **linked to my make.fun account**, was **created after the opening**, and carries an **OSI license** file.
+- [ ] The **About** block shows the bounty's make.fun page as its website and includes the **`makefun`** topic.
+- [ ] The guide was **written, then revised**, inside the recorded session — at least 30% authored lines, one file revised across two or more messages, five or more text turns.
+- [ ] I re-downloaded a **current kit** rather than trusting an old copy.
+- [ ] `makefun check` on the exact commit and bundle I am about to submit says **0 failed**, and `status --competition` confirms I still have quota today.
+- [ ] After submitting, I will poll `status` until the entry reads **checked**, not just received — and leave the repository untouched and public until the final re-check has run.
 
 ## Questions
 
